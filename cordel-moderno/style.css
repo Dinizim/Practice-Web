@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+/*config geral*/
+:root {
+    --fonte-text: 'Sriracha', Arial , sans-serif ;
+    --fonte-titulo: 'Passion One', Cursive ;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+/*config geral*/
+/*cabeçalho config*/
+.cabecalho {
+    
+    background-color: black;
+    color: white;
+    font-family: var(--fonte-titulo);
+    min-height: 150px;
+    max-height: 150px;
+    text-align: center;
+    padding-top: 20px;
+}
+.titulo{
+    font-size: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    font-variant: small-caps;
+}
+.titulo-escrito > a{
+    font-family: var(--fonte-text);
+    color: rgb(184, 153, 170);
+    
+}
+/*cabeçalho escrito*/
+/*conteudo princiapl*/
+main{
+    font-family: var(--fonte-text);
+    font-size: 1.5em;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+    /*imagens com efeito parallax*/
+.parallax-1{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.637);
+}
+.parallax-1 > p{
+    display: inline-block;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+    border-radius: 10px;
+    text-shadow: 2px 1px 0px black;
+}
+.parallax-2{
+    background-image: url(imagens/background002.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.63);
+}
+.parallax-2 > p{
+    display: inline-block;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+    border-radius: 10px;
+    text-shadow: 2px 1px 0px black;}
+    /*imagens com efeito parallax*/
+/*conteudo principal*/
+/*rodapé*/
+footer{
+    background-color: black;
+    padding: 1vh;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+footer > a{
+    color: rgb(184, 153, 170);
+}
+/*rodapé*/

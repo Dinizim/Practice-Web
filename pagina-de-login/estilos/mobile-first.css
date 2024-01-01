@@ -1,0 +1,198 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+:root {
+    --font-popins: 'Poppins', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+@media screen and (min-width:374px){
+  /* confi gerais */
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ html,body{
+    background-color: var(--background);
+    color: var(--text-base);
+    font-family: var(--font-popins);
+    font-weight: 400;
+    padding: 10px;
+  }
+  a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .imagem {
+    display: none;
+  }
+  /* titulo */
+  .cabecalho{
+    margin: 30px 0px;
+  }
+  .titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+  .titulo > span{
+    margin-top: 5px;
+    display: block;
+    width: 35px;
+    height: 30px  ;
+  }
+  .titulo > h1{
+    color: var(--text-title);
+  }
+
+  .cabecalho > p{
+    margin-top: 10px;
+    font-size: 15px;
+  }
+/* conteudo de login */
+/* efeito de focus */
+.login:focus-with4in {
+  border: var(--primary-color) 1px solid;
+ }
+.login:focus-within > #email-svg {
+  background-image: url(../images/mail-focus.svg);
+}
+.login:focus-within > #lock-svg {
+  background-image: url(../images/lock-focus.svg );
+}
+/* formulario */
+  .login {
+    border: 1px solid var(--text-base);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  /* config - das imagens */
+  .login > span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/mail.svg);
+  }
+  
+  #lock-svg{
+    background-image: url(../images/lock.svg);
+  }
+  #eye-png{
+    background-image: url(../images/eye.svg);
+    width: 23px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+  }
+  #eye-png.hide{
+    transform: rotate(180deg);
+    transition: .5s;
+  }
+  #eye-png.show{
+    transform: rotate(-180deg);
+    transition: .5s;
+  }
+  /* config - dos - inputs */
+  .login > input{
+    color: var(--text-base);
+    outline: 0;
+    margin-left: 10px;
+    width: calc(100% - 20px);
+    border: none;
+    background-color: var(--background);
+    transform: translate (20px,0px);
+  }
+  label{
+    font-weight: 600;
+  }
+  .login > input::placeholder{
+    color: var(--text-base);
+  }
+  /* configurando o 'complementar' */
+  .complemento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .complemento > label{
+    font-weight: 400;
+  }
+  .complemento > label   > input{
+    margin-right: 10px;
+  }
+  /* configurando o check=box */
+   label >span{
+    margin-left: 10px;
+  }
+  input[type=checkbox] {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: -5px;
+    left: 0;
+    background-color:var(--background);
+    border-radius: 5px;
+    border: 1px solid var(--text-base);
+  }
+  input[type=checkbox]:checked:before{
+    background-color: var(--primary-color);
+  }
+  input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 17px;
+    border: solid var(--form-background);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -4px;
+    left: 9px;
+  }
+  /* configurando o botão */
+  #bnt{
+    margin: 20px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+    font-weight: 600;
+    font-size: 24px;
+    background-color: var(--primary-color);
+    color:#24221f;
+    border: none;
+    cursor: pointer;
+  }
+  #bnt + p{
+    text-align: center;
+  }
+  /* animaçoes */
+  #bnt:hover{
+    box-shadow: inset 2px -2px 14px black;
+    transition: 0.2s;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+
+}
+/* mostras / esconder a senha */

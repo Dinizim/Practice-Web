@@ -1,0 +1,61 @@
+@charset 'UTF-8';
+/* 
+Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more.
+ */
+
+ @media screen and (min-width :557px ) and (max-width:768px) {
+     main{
+        width: 90vw;
+        min-height: 300px ;
+        font-size: 1em;
+        
+     }
+    .imagem{
+        background-image: url(../imagens/pexels-anni-roenkae-2599195.jpg);
+        position: absolute;
+        display: block;
+        float: left;
+        width: 40%;
+        height: 100%;
+        border-radius: 20px 0px 0px 20px ;
+        box-shadow: inset -5px -5px 6px 0px rgba(0,0,0,0.75);
+        border-right: 1px solid black;
+    }
+
+    .login{
+        float : right;
+        width: 60%;
+        padding: 10px 10px 10px 10px;
+    }
+    .titulo{
+        padding: 0px;
+    }
+ }
+ @media screen and (min-width :769px ){
+    main {
+        width: 769px;
+        min-height: 330px;
+    }
+    .imagem{
+        position: absolute;
+        display: block;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        border-radius: 0px 20px 20px 0px ;
+        box-shadow: inset 5px -5px 6px 0px rgba(0,0,0,0.75);
+        border-left: 1px solid black;
+    }
+
+    .login{
+        float : left;
+        width: 50%;
+    }
+    form{
+        margin-top: 10px;
+    }
+ }

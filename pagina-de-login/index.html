@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/pagina-de-login/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/mobile-first.css">
+    <link rel="stylesheet" href="estilos/telas.css" media="screen">
+    <title>Camp.in</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="">
+    </header>
+    <main>
+        <section class="escrito">
+            <section class="cabecalho">
+                <div class="titulo">
+                    <span><img src="images/log-in.svg" alt=""></span>
+                    <h1>Faça seu login</h1>
+                </div>
+                <p>Entre com suas informações de cadastro.</p>
+            </section>
+            <form action="" class="formulario">
+                <label for="email">E-mail</label>
+                <div class="login">
+                    <span id="email-svg"></span>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required >
+                </div>
+                <label for="senha">Senha</label>
+                <div class="login">
+                    <span id="lock-svg"></span>
+                    <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required maxlength="8">
+                    <span id="eye-png" onclick="showhide()" href=""></span>
+                </div>
+                <div class="complemento">
+                    <label for="checkbox"><input type="checkbox" name="check" id="check"><span>Lembre-me</span></label>
+                    <a href="">Esqueci minha senha</a>
+                </div>
+                <input type="button" id ='bnt'value="ENTRAR">
+                <p>não tem uma conta?<a href="">Registra-se</a></p>
+            </form>
+        </section>
+    </main>
+    <section class="imagem">
+
+    </section>
+    <script src="java.js">
+    </script>
+</body>
+</html>

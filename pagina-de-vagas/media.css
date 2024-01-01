@@ -1,0 +1,115 @@
+@charset 'UTF-8';
+:root{
+    --font: 'Inter' , Arial, Helvética, Verdana , sans-serif;
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --title-color: #101828;
+}
+
+/* 
+smartphone - 360 x 720.
+Tablet – 768 x 1024.
+iPhone – 375 x 812.
+Laptop – 1366 x 768.
+Desktop or high-resolution laptop – 1920 x 1080 
+*/
+@media screen and (min-width: 768px) {
+    .navegação{
+        display: block;
+        margin-right: 50px;
+    }
+    #nav{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    ul{
+        list-style-type: none;
+    }
+    li{
+        padding: 5px;
+    }
+    .cabecalho{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .metricas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        gap: 0px;
+
+    }
+    .position{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: flex-start;
+        justify-content:center ;
+    }
+    .metricas-itens{    
+        display: block;
+        width: 300px;
+        padding: 10px;
+
+    }
+    .metricas-itens > h1{
+        color: var(--main-color);
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+    .metricas-itens > h3{
+        color: var(--title-color);
+        margin-bottom: 10px;
+    }
+    .vagas {
+            margin-top: 100px;
+        }
+    .img {
+        display: block;
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.589); 
+        height: 300px;
+
+}
+    .img > img {
+        width: 100%;
+        height: 100%;
+    }
+    .depoimento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 100px 0px;
+        gap: 20px;
+    }
+    .depoimento > span{
+        font-weight: bold;
+        color: var(--main-color);
+    }
+    .depoimento-img > h4{
+        color: var(--title-color);
+        margin: 10px 0px;
+    }
+    .formulário > input{
+        max-width: 400px;
+    }
+}
+@media screen and (min-width: 1366px) {
+    nav{
+        display: flex;
+        justify-content: first baseline;
+    }
+    .navegação{
+        margin-right: 300px;
+    }
+    .metricas{
+        display: flex;
+        flex-direction: row;
+    }
+    .img{
+        margin: 0px 80px;
+    }
+}

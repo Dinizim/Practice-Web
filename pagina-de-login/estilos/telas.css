@@ -1,0 +1,56 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+:root {
+    --font-popins: 'Poppins', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+  }
+
+@media screen  and (min-width : 768px){
+    .escrito{
+        margin: 40px;
+        background-color: var(--form-background);
+        padding: 40px;
+    }
+    .login > input{
+        background-color: var(--form-background);
+    }
+    .complemento{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+}
+@media screen and (min-width:1280px ){
+    html,body{
+        display: flex;
+        flex-direction: row;
+    }
+    main{
+        float: left;
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        position: relative;
+    }
+    .escrito {
+        min-width:100%;
+    }
+    .imagem{
+        position: absolute;
+        margin-left: 40px;
+        left:  635px;
+        top: 60px;
+        float: right;
+        display: block;
+        background-image: url(../images/side-image.jpg);
+        background-position: center center;
+        background-size: cover;
+        width: 500px;
+        height: 564px;
+    }
+}
